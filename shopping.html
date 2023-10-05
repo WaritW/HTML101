@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.content_add {
+    margin: 20px;
+}
+
+.detail_add {
+    display: flex;
+}
+
+.city {
+    width: 100%;
+}
+
+.province {
+    width: 100%;
+}
+
+.postcode {
+    width: 100%;
+}
+
+</style>
+<body>
+    <h1>Shipping Address</h1>
+    <div class="content_add">
+        <label for="Fullname">Full name</label><br>
+        <input type="text" name="fullname" style="width:97%; height: 20px;"><br>
+        <label for="Address1">Address 1</label><br>
+        <input type="text" name="address" style="width: 97%; height: 20px;"><br>
+        <label for="Address2">Address 2</label><br>
+        <input type="text" name="address" style="width: 97%; height: 20px;"><br>
+        <div class="detail_add">
+            <div class="city">
+                <label for="City">City</label><br>
+                <input type="text" name="city" style="width: 90%; height: 20px">
+            </div>
+            <div class="province">
+                <label for="Province">Province</label><br>
+                <input type="text" name="province" style="width: 90%; height: 20px"><br>
+                
+            </div>
+            <div class="postcode">
+                <label for="Postcode">Postcode</label><br>
+                <input type="text" name="postcode" style="width: 90%; height: 20px"><br>
+            </div>
+        </div>
+    </div>
+    <div class="deliver_btn" style="position:relative; text-align: center;" >
+        <button type="button" style="width: 300px; height: 30px;">Deliver to this address</button>
+    </div>
+
+</body>
+</html>
