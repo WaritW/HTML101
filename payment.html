@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.content {
+    display: flex;
+}
+
+.ship_cart {
+   width: 100%;
+}
+
+
+td, th {
+  border: 1px solid #949393;
+  padding: 20px;
+}
+
+.order_summary {
+    width: 20%;
+    padding-left: 10px;
+}
+
+</style>
+<body>
+    <h1>Payment Methods</h1>
+        <div class="content">
+            
+                <div style="width: 70%;">
+                    <table style="border-collapse: collapse; width: 100%;" >
+                        <th style="text-align: left; width: 60%;">Items</th>
+                        <th style="text-align: center; width: 10%;">Quantity</th>
+                        <th style="text-align: right; width: 30%;">Price (THB)</th>
+                    </tr>
+                    <tr>
+                        <td><b>Toy Name</b> by Brand <br> Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age <br>  
+                            <b style="color:red;">In Stock</b>
+                            <t>/</t>
+                            <b style="color:red;">Out of Stock</b><br> 
+                        </td>
+                        <td>
+                            <p style="text-align: right;">1</p>
+                        </td>
+                        <td>
+                            <p style="text-align: right">100.00</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Toy Name</b> by Brand <br> Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age <br>  
+                            <b style="color:red;">In Stock</b>
+                            <t>/</t>
+                            <b style="color:red;">Out of Stock</b><br> 
+                        </td>
+                        <td>
+                            <p style="text-align: right;">1</p>
+                        </td>
+                        <td>
+                            <p style="text-align: right;">100.00</p>
+                        </td>
+                    </tr>
+                    </table>
+                    
+                
+
+            </div>
+        
+    
+            <div class="order_summary">
+                    <h4>Order Summary</h4>
+                    <div>
+                        <p>Items(2):
+                        <span style="color:rgb(155, 47, 47);">&nbsp;200.00</span>
+                        THB</p>
+                    </div>
+
+                    <div >
+                        <p>Shipping Fee:
+                        <span style="color:rgb(155, 47, 47);">&nbsp;150.00</span>
+                        THB</p>
+                    </div>
+                
+                <hr style="border: 0.5px solid green; width: 100%;">
+                <div >
+                
+                        <h4>Order total:
+                        <span style="color:rgb(155, 47, 47);">&nbsp;200.00</span>
+                        THB</h4>
+                
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            <p>Shipping Method: Kerry Express</p>
+            <b>Select payment methods</b><br>
+            
+            <input type="radio" name="card" id="card">
+            <label for="card"><b>Credit or Debit Cards</b></label><br>
+
+            <input type="radio" name="paypal" id="paypal">
+            <label for="paypal"><b>Paypal</b></label><br>
+        
+            <input type="radio" name="line_pay" id="line_pay">
+            <label for="line_pay"><b>Line Pay</b></label><br>
+        </div>
+        <div style="margin-left: 70%;">
+            <button type="button" style="width: 200px; height: 30px;">Place your order</button>
+        </div>
+</body>
+</html>
