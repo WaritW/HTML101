@@ -10,17 +10,17 @@
 .section {
     display: flex;
     width: 100%;
-
 }
+
 .picture { 
   background-color: white;
-  width: 80px;
-  height: 100px;
+  width: 100px;
+  height: 120px;
   border: 1px solid gray;
   padding: 50px;
   margin: 10px;
   text-align: center;
-};
+}
 
 .detail {
     width: 100%;
@@ -31,43 +31,34 @@
 
     <h1>Toy name</h1>
 
-<div class="section">
-
-    <div class="picture">
-        <picture>Toy picture</picture>
+    <div class="section">
+        <div class="picture">
+            <picture>Toy picture</picture>
+        </div>
+        <div class="detail">
+            <p>Brand</p>
+            <p>Gender</p>
+            <p>Age</p>
+            <p>Price</p>
+            <p>Shipping Method: Cash on Delivery</p>
+            <b style="color:red;">In Stock</b>
+            /
+            <b style="color:red;">Out of Stock</b><br>
+            <br><label for="quantity">Quantity</label>
+            <select id="qty" name="quantity" style="width: 50px;">
+            <option value="1" style="text-align: center;">1</option>
+            <option value="2" style="text-align: center;">2</option>
+            <option value="3" style="text-align: center;">3</option>
+            <option value="4" style="text-align: center;">4</option>
+            <option value="5" style="text-align: center;">5</option>
+            <option value="6" style="text-align: center;">6</option>
+            <option value="6" style="text-align: center;">7</option>
+            <option value="6" style="text-align: center;">8</option>
+            <option value="6" style="text-align: center;">9</option>
+            <option value="6" style="text-align: center;">10</option>
+            </select>
+            <br><br><button type="button" style="width: 200px; height: 30px;">Add to cart</button>
+        </div>
     </div>
-
-    <div class="detail">
-        <p>Brand</p>
-        <p>Gender</p>
-        <p>Age</p>
-        <p>Price</p>
-        <p>Shipping Method: Cash on Delivery</p>
-    
-        <b style="color:red;">In Stock</b>
-        /
-        <b style="color:red;">Out of Stock</b><br>
-        
-        <br><label for="quantity">Quantity</label>
-        <select id="qty" name="quantity" style="width: 50px;">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="6">7</option>
-        <option value="6">8</option>
-        <option value="6">9</option>
-        <option value="6">10</option>
-        </select>
-
-        <br><br><button type="button" style="width: 200px; height: 30px;">Add to cart</button>
-
-    </div>
-    
-</div>
-
-
 </body>
 </html>
